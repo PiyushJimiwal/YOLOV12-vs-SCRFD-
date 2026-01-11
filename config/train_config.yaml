@@ -1,0 +1,68 @@
+# Training Configuration for YOLOv12-SCRFD Face Recognition Model
+
+# Data Configuration
+data_dir: 'data/faces'
+img_size: 640
+num_workers: 4
+max_students: null  # Set to a number to limit, null for unlimited
+
+# Model Configuration
+embedding_dim: 512
+num_classes: 2  # Will be automatically set based on dataset
+
+# Training Hyperparameters
+epochs: 100
+batch_size: 16
+learning_rate: 0.001
+weight_decay: 0.0001
+optimizer: 'adamw'  # Options: 'adam', 'sgd', 'adamw'
+
+# Loss Weights
+lambda_cls: 1.0      # Classification loss weight
+lambda_bbox: 1.0     # Bounding box loss weight
+lambda_lm: 1.0       # Landmark loss weight
+lambda_embed: 1.0    # Embedding loss weight
+
+# Recognition Threshold
+threshold: 0.5  # Distance threshold for face matching
+
+# Training Schedule
+warmup_epochs: 5
+scheduler: 'cosine'  # Options: 'cosine', 'step', 'exponential'
+
+# Checkpointing
+output_dir: 'outputs'
+save_freq: 10  # Save checkpoint every N epochs
+save_best: true
+
+# Augmentation (handled in dataset)
+augmentation:
+  horizontal_flip: 0.5
+  brightness_contrast: 0.5
+  gaussian_noise: 0.3
+  blur: 0.3
+  color_jitter: 0.3
+  shift_scale_rotate: 0.5
+
+# Validation
+val_freq: 1  # Validate every N epochs
+
+# Mixed Precision Training
+use_amp: true
+
+# Distributed Training
+distributed: false
+world_size: 1
+
+# Random Seed
+seed: 42
+
+# Logging
+log_interval: 10  # Log every N batches
+tensorboard: true
+
+# Early Stopping
+early_stopping:
+  enabled: true
+  patience: 15
+  min_delta: 0.001

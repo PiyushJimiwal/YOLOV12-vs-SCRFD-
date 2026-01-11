@@ -1,0 +1,103 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Model checkpoints and outputs
+outputs/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+
+# Logs
+logs/
+*.log
+tensorboard/
+
+# Data
+data/faces/train/
+data/faces/val/
+data/faces/test/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+!data/faces/README.md
+
+# Datasets
+datasets/
+*.zip
+*.tar
+*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+.cache/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+student_database.json
+
+# Results
+results/
+experiments/
+wandb/
+
+# Config files with sensitive data
+config/secrets.yaml
+config/local.yaml
+
+# Large files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3

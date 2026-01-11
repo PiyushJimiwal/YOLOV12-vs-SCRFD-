@@ -1,0 +1,33 @@
+{
+  "yolov12": {
+    "accuracy": 66.66666666666666,
+    "correct": 8,
+    "total": 12,
+    "per_person": {
+      "person_1": {
+        "correct": 8,
+        "total": 8
+      },
+      "person_2": {
+        "correct": 0,
+        "total": 4
+      }
+    }
+  },
+  "scrfd": {
+    "accuracy": 66.66666666666666,
+    "correct": 8,
+    "total": 12,
+    "per_person": {
+      "person_1": {
+        "correct": 8,
+        "total": 8
+      },
+      "person_2": {
+        "correct": 0,
+        "total": 4
+      }
+    }
+  },
+  "winner": "SCRFD"
+}

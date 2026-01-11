@@ -1,0 +1,62 @@
+# Inference Configuration for YOLOv12-SCRFD Face Recognition Model
+
+# Model Configuration
+checkpoint_path: 'outputs/checkpoint_best.pth'
+device: 'cuda'  # Options: 'cuda', 'cpu'
+
+# Recognition Settings
+threshold: 0.5  # Distance threshold for face matching
+img_size: 640
+
+# Database Settings
+database_path: 'outputs/student_database.json'
+build_database: true
+database_split: 'train'  # Which split to use for building database
+
+# Inference Modes
+mode: 'test'  # Options: 'test', 'image', 'video', 'webcam'
+
+# Test Mode Settings
+test:
+  data_dir: 'data/faces'
+  split: 'val'
+  save_results: true
+  save_confusion_matrix: true
+  save_roc_curve: true
+
+# Image Mode Settings
+image:
+  input_path: 'test_images/sample.jpg'
+  output_path: 'outputs/result.jpg'
+  visualize: true
+
+# Video Mode Settings
+video:
+  input_path: 'test_videos/sample.mp4'
+  output_path: 'outputs/result.mp4'
+  display: true
+  skip_frames: 0  # Process every Nth frame (0 = process all)
+
+# Webcam Mode Settings
+webcam:
+  camera_id: 0
+  resolution: [640, 480]
+  fps: 30
+  record: false
+  output_path: 'outputs/webcam_recording.mp4'
+
+# Batch Inference
+batch_inference:
+  enabled: false
+  input_dir: 'test_images/'
+  output_dir: 'outputs/batch_results/'
+  file_extensions: ['.jpg', '.jpeg', '.png', '.bmp']
+
+# Performance
+use_half_precision: false  # Use FP16 for faster inference
+optimize_for_mobile: false
+
+# Output Settings
+output_dir: 'outputs/inference'
+save_embeddings: false
+save_metrics: true
