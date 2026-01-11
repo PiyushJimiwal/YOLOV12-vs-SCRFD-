@@ -1,33 +1,97 @@
 {
   "yolov12": {
-    "accuracy": 66.66666666666666,
-    "correct": 8,
-    "total": 12,
+    "accuracy": 56.00000000000001,
+    "correct": 28,
+    "total": 50,
     "per_person": {
-      "person_1": {
-        "correct": 8,
+      "anshul": {
+        "correct": 2,
+        "total": 4
+      },
+      "Mohit": {
+        "correct": 4,
+        "total": 4
+      },
+      "nivedan": {
+        "correct": 0,
         "total": 8
       },
-      "person_2": {
+      "Piyush": {
+        "correct": 6,
+        "total": 10
+      },
+      "purnima": {
+        "correct": 4,
+        "total": 4
+      },
+      "saksham": {
+        "correct": 4,
+        "total": 4
+      },
+      "tanniskha": {
+        "correct": 2,
+        "total": 4
+      },
+      "vaibhav": {
+        "correct": 4,
+        "total": 4
+      },
+      "Vanshika": {
         "correct": 0,
+        "total": 4
+      },
+      "Yash": {
+        "correct": 2,
         "total": 4
       }
     }
   },
   "scrfd": {
-    "accuracy": 66.66666666666666,
-    "correct": 8,
-    "total": 12,
+    "accuracy": 44.0,
+    "correct": 22,
+    "total": 50,
     "per_person": {
-      "person_1": {
-        "correct": 8,
+      "anshul": {
+        "correct": 2,
+        "total": 4
+      },
+      "Mohit": {
+        "correct": 2,
+        "total": 4
+      },
+      "nivedan": {
+        "correct": 0,
         "total": 8
       },
-      "person_2": {
+      "Piyush": {
+        "correct": 4,
+        "total": 10
+      },
+      "purnima": {
         "correct": 0,
+        "total": 4
+      },
+      "saksham": {
+        "correct": 4,
+        "total": 4
+      },
+      "tanniskha": {
+        "correct": 2,
+        "total": 4
+      },
+      "vaibhav": {
+        "correct": 4,
+        "total": 4
+      },
+      "Vanshika": {
+        "correct": 2,
+        "total": 4
+      },
+      "Yash": {
+        "correct": 2,
         "total": 4
       }
     }
   },
-  "winner": "SCRFD"
+  "winner": "YOLOv12"
 }
